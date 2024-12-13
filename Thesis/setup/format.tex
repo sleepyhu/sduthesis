@@ -70,7 +70,7 @@
 
 \renewcommand{\CJKglue}{\hskip -0.1 pt plus 0.08\baselineskip} % 控制字间距，使每行 34 个汉字
 \makeatother
-% \setcounter{chapter}{0}  % 确保章节计数器从 1 开始
+
 
 %%%%%%%%%%%%% Contents %%%%%%%%%%%%%%%%%
 \renewcommand{\contentsname}{目\qquad\qquad 录}
@@ -83,10 +83,9 @@
 %              {\CJKnumber{\thecontentslabel}\qquad}{}
 %              {\hspace{.5em}\titlerule*[10pt]{$\cdot$}\sihao\contentspage}
 % 设置章节标题格式
-% \titlecontents{chapter}[2em]{\vspace{.8\baselineskip}\xiaosi\song}
-%              {\thechapter\quad}{}
-%              {\hspace{.5em}\titlerule*[10pt]{$\cdot$}\xiaosi\contentspage}
-
+\titlecontents{chapter}[2em]{\vspace{.8\baselineskip}\xiaosi\song}
+             {\thechapter\quad}{}
+             {\hspace{.5em}\titlerule*[10pt]{$\cdot$}\xiaosi\contentspage}
 % 设置节标题格式
 \titlecontents{section}[3em]{\vspace{.25\baselineskip}\xiaosi\song}
              {\thecontentslabel\quad}{}
@@ -110,7 +109,7 @@
 \renewcommand{\thechapter}{\arabic{chapter}} % 保持章节编号
 % \titleformat{\chapter}{\sanhao\hei\bfseries}{\thechapter}{2em}{} 
 % 设置章节标题格式
-\titleformat{\chapter}{\sanhao\hei\bfseries}{\thechapter}{2em}{} 
+\titleformat{\chapter}{\sanhao\hei\bfseries}{\thechapter\ }{2em}{} 
 % \titleformat{\chapter}{\centering\sanhao\hei}{\sanhao\hei\chaptername}{2em}{}
 % 设置章节标题的间距
 \titlespacing{\chapter}{0pt}{0.8\baselineskip}{0.5\baselineskip}

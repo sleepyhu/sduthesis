@@ -1,3 +1,5 @@
+\ttl@change@i {\@ne }{chapter}{2em}{\vspace {.8\baselineskip }\xiaosi \song }{\thechapter \quad }{}{\hspace {.5em}\titlerule *[10pt]{$\cdot $}\xiaosi \contentspage }\relax 
+\ttl@change@v {chapter}{}{}{}\relax 
 \ttl@change@i {\@ne }{section}{3em}{\vspace {.25\baselineskip }\xiaosi \song }{\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *[10pt]{$\cdot $}\xiaosi \contentspage }\relax 
 \ttl@change@v {section}{}{}{}\relax 
 \ttl@change@i {\@ne }{subsection}{4em}{\vspace {.25\baselineskip }\xiaosi \song }{\thecontentslabel \quad }{}{\hspace {.5em}\titlerule *[10pt]{$\cdot $}\xiaosi \contentspage }\relax 
