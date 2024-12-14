@@ -4,6 +4,7 @@ The top-level auxiliary file: sdumain.aux
 A level-1 auxiliary file: body.aux
 The style file: references/ref.buk.bst
 A level-1 auxiliary file: appendix/acknowledgements.aux
+A level-1 auxiliary file: appendix/appendix.aux
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Database file #1: references/reference.bib
@@ -14,7 +15,7 @@ Database file #1: references/reference.bib
 Done.
 You've used 1 entry,
             4577 wiz_defined-function locations,
-            1014 strings with 7558 characters,
+            1015 strings with 7579 characters,
 and the built_in function-call counts, 656 in all, are:
 = -- 76
 > -- 7

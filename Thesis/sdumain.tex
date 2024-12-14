@@ -26,7 +26,9 @@
 \clearpage{\pagestyle{empty}\cleardoublepage}
 \setcounter{page}{1}                                 % 单独从 1 开始编页码
 \pagenumbering{Roman}
-\titleformat{\chapter}{\centering\xiaoer\hei}{\chaptername}{2em}{} % 设置目录两字的格式
+\titleformat{\chapter}{\centering\xiaoer\hei\bfseries}{\chaptername}{2em}{} % 设置目录两字的格式 
+
+
 \pdfbookmark[0]{目~~录}{mulu}
 \tableofcontents                                     % 中文目录
 
@@ -62,7 +64,7 @@
 % 此代码用于定义章节标题的格式
 % \titleformat 命令用于设置章节的排版样式
 % \titleformat{\chapter}{\centering\xiaoer\hei}{\chaptername}{2em}{}
-\renewcommand{\bibname}{\centering\xiaoer\hei 参考文献}
+\renewcommand{\bibname}{\centering\xiaoer\hei\bfseries 参考文献}
 
 \bibliographystyle{references/ref.buk}
 \phantomsection
@@ -78,6 +80,6 @@
 
 
 \include{appendix/acknowledgements}            % 致谢
-
+\include{appendix/appendix}                    % 附录
 \clearpage
 \end{document}                                 % 结束全文

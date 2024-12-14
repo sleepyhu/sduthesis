@@ -74,6 +74,7 @@
 
 %%%%%%%%%%%%% Contents %%%%%%%%%%%%%%%%%
 \renewcommand{\contentsname}{目\qquad\qquad 录}
+
 \setcounter{tocdepth}{2} % 控制目录深度
 % 使用 ctexbook 之后已无必要
 % 定义章节名称格式
@@ -109,20 +110,20 @@
 \renewcommand{\thechapter}{\arabic{chapter}} % 保持章节编号
 % \titleformat{\chapter}{\sanhao\hei\bfseries}{\thechapter}{2em}{} 
 % 设置章节标题格式
-\titleformat{\chapter}{\sanhao\hei\bfseries}{\thechapter\ }{2em}{} 
+\titleformat{\chapter}{\sanhao\hei\bfseries}{\thechapter }{2em}{} 
 % \titleformat{\chapter}{\centering\sanhao\hei}{\sanhao\hei\chaptername}{2em}{}
 % 设置章节标题的间距
 \titlespacing{\chapter}{0pt}{0.8\baselineskip}{0.5\baselineskip}
 % 设置节标题格式
-\titleformat{\section}{\sihao\hei}{\thesection}{1em}{}
+\titleformat{\section}{\sihao\hei\bfseries}{\thesection}{1em}{}
 % 设置节标题的间距
 \titlespacing{\section}{0pt}{0.5\baselineskip}{0.5\baselineskip}
 % 设置子节标题格式
-\titleformat{\subsection}{\xiaosi\hei}{\thesubsection}{1em}{}
+\titleformat{\subsection}{\xiaosi\hei\bfseries}{\thesubsection}{1em}{}
 % 设置子节标题的间距
 \titlespacing{\subsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
 % 设置小节标题格式
-\titleformat{\subsubsection}{\xiaosi\hei}{\thesubsubsection}{1em}{}
+\titleformat{\subsubsection}{\xiaosi\hei\bfseries}{\thesubsubsection}{1em}{}
 % 设置小节标题的间距
 \titlespacing{\subsubsection}{0pt}{0.5\baselineskip}{0.5\baselineskip}
 
@@ -290,16 +291,16 @@
   \centering
   \centerline{\includegraphics[width=\textwidth]{figures/sdulogo.jpg}}
   \end{figure}
-  
+
   \vspace*{-4em}
-  \song\prefacesize{毕业论文（设计）}
+  \hei\xiaoer\prefacesize{\textbf{毕业论文(设计)}\\}
   \end{center}
 
-  \vspace*{-2em}
+  \vspace*{2em}
   \noindent\song\sanhao{\textbf{论文（设计）题目：}}
 
   \begin{center}
-  \vspace*{3em}
+  \vspace*{0em}
   \hei\xiaoer{\textbf{\@ctitle}}
   \vspace*{16pt}
   
@@ -344,13 +345,13 @@
 \pdfbookmark[0]{ABSTRACT}{eabstract}
 % \addcontentsline{toc}{chapter}{ABSTRACT}
 % \chapter*{\centering\xiaoer{\textbf{ABSTRACT}}}
-{\centering \xiaoer\hei \textbf{ABSTRACT}\par}
+{\centering \xiaoer \textbf{ABSTRACT}\par}
 %\vspace{\baselineskip}
 \xiaosi{\begin{spacing}{1.5}\@eabstract\end{spacing}}
 \vspace{\baselineskip}
 
 \hangafter=1\hangindent=60pt\noindent
-{\xiaosi\textbf{Keywords:}} {\xiaosi\@ekeywords}
+{\xiaosi\textbf{Key Words:}} {\xiaosi\@ekeywords}
 \thispagestyle{empty}
 }
 \makeatother
